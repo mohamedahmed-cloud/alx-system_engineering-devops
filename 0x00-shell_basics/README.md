@@ -1,0 +1,1 @@
+To print the working directory use command : pwd
