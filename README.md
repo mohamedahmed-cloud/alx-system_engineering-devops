@@ -6,3 +6,8 @@
 	git add --chmod=+x FILE
 
 ```
+----
+- Make a symbolic link:
+```bash
+	ln -s file1 link
+```
