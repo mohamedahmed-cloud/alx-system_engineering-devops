@@ -1,0 +1,2 @@
+#!/bin/bash
+cat index.txt | tr "A" "Z" | tr "c" "e"
