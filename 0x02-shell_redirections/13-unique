@@ -1,2 +1,2 @@
 #!/bin/bash
-sort index.txt |uniq -u | tr " " "\n"
+sort | uniq | tr " " "\n"
