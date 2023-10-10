@@ -6,7 +6,7 @@ cnt=1
 while [ $cnt -le 10 ]
 do
 	echo "Best School"
-	if [ $cnt != 9 ]; then
+	if [ $cnt == 9 ]; then
 		echo "Hi"
 	fi
 	((cnt++))
