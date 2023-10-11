@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Write a Bash script that gives you information about the school file.
 # Requirements:
 # 	You must use if and, else (case is forbidden)
