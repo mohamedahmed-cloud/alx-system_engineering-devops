@@ -9,5 +9,25 @@
 - To Generate SSH
 ```
 ssh-keygen -t rsa -b 2048
+```
+---
+- File
+```sh
+	# check the file is empty
+	# -f check the file
+	# -e check the folder
+	if [ -f filename ]; then
+		echo fileexist
+	else
+		echo filenotexist
+	fi
+	# check the3 file is emty
+	if [ -s filename ]; then
+		echo file is not empty
+	else
+		echo empty
+	fi
+
+	
 
 ```
