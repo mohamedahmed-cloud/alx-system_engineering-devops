@@ -5,4 +5,4 @@
 # 	In a list format
 #	Where only the part of the name after the first dash is displayed (refer to the example)
 
-find . | cut -d "-" -f 2
+find . -type f | cut -d "-" -f 2 | cut -d "/" -f 2
