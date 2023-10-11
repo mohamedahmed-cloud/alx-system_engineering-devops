@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays the content of the file /etc/passwd.
+
+# 	Your script should only display:
+
+# 	username
+# 	user id
+# 	Home directory path for the user
+
+cut -d ":" -f 1,4,6 < /etc/passwd
