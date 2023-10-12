@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+# IFS (internal field separator)
+
+while IFS=":" read -r username password Uid Gid GECOS home_directory shell;do
+	echo "The user $username is part of the $Gid gang, lives in $home_directory and rides $shell. $Uid's place is protected by the passcode $password, more info about the user here: $GECOS"
+done < /etc/passwd
+
+# example
+# The user root is part of the 0 gang, lives in 
+# /root and rides /bin/bash. 0's place is protected by the passcode x, more info about the user here: root
