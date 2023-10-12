@@ -5,7 +5,7 @@ while true; do
 	shellcheck $1
 	if [ $? -ne 1 ]; then
 
-		git add *
+		git add .
 		git commit -m "Add File $1"
 		git push
 	fi
