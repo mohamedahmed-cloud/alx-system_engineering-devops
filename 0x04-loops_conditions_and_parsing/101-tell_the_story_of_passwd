@@ -3,7 +3,8 @@
 # IFS (internal field separator)
 
 while IFS=":" read -r username password Uid Gid GECOS home_directory shell;do
-	echo "The user $username is part of the $Gid gang, lives in $home_directory and rides $shell. $Uid's place is protected by the passcode $password, more info about the user here: $GECOS"
+	echo "The user $username is part of the $Gid gang, lives in $home_directory and rides $shell. $Uid's place is\
+protected by the passcode $password, more info about the user here: $GECOS"
 done < /etc/passwd
 
 # example
