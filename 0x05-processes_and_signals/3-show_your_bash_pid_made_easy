@@ -4,4 +4,4 @@
 # 	Requirements:
 # 	You cannot use ps
 
-pgrep ssh -l
+pgrep ssh -l | grep bash
