@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# The exact format must be:
+# 	OCCURENCE_NUMBER IP HTTP_CODE
+# 	In list format
+
+awk '{print $1 " " $9}' apache-access.log | sort -n | uniq -c | sort -nr
