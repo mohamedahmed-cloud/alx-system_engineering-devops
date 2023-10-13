@@ -13,5 +13,4 @@ while true; do
 	trap "echo I hate the kill command && exit && rm -rf /var/run/myscript.pid" SIGTERM
 	trap "echo Y U no love me?! && exit && rm -rf /var/run/myscript.pid" SIGINT
 	echo "To infinity and beyond"
-	rm -rf "/var/run/myscript.pid"
 done
