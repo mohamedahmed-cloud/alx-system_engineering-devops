@@ -9,8 +9,8 @@
 
 touch "/var/run/myscript.pid"
 while true; do
-	trap "echo I hate the kill command && exit && rm /var/run/myscript.pid" SIGTERM
-	trap "echo Y U no love me?! && exit && rm /var/run/myscript.pid" SIGINT
+	trap "echo I hate the kill command && exit && rm -rf /var/run/myscript.pid" SIGTERM
+	trap "echo Y U no love me?! && exit" SIGINT
 	echo "To infinity and beyond"
 	sleep 1
 done
