@@ -8,10 +8,10 @@
 #	when receiving a SIGQUIT or SIGTERM signal
 
 sudo touch "/var/run/myscript.pid"
-echo $$ | tee /var/run/myscript.pid >/dev/null
+echo $$ | sudo tee /var/run/myscript.pid >/dev/null
 
 while true; do
-	trap "echo I hate the kill command && sudo  rm -rf /var/run/myscript.pid && exit" SIGTERM
+	trap "echo "I hate the kill command" && sudo  rm -rf /var/run/myscript.pid && exit" SIGTERM
 	trap "echo Y U no love me?! && sudo rm -rf /var/run/myscript.pid && exit" SIGINT
 	echo "To infinity and beyond"
 	sleep 5
