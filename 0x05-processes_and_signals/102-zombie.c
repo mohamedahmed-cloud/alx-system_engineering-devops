@@ -14,7 +14,7 @@ int main(void)
 		if (fork() == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
-			// exit(0);
+			
 
 		}
 			cnt++;
