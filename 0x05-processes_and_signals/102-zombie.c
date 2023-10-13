@@ -1,6 +1,17 @@
 #include "stdio.h"
+#include "stdlib.h"
 #include "unistd.h"
-#include <stdlib.h>
+
+int infinite_while(void)
+{
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
+}
+
+
 /**
  * main - The Main function.
  * Return: always return 0
@@ -8,18 +19,17 @@
 int main(void)
 {
 	int cnt = 0;
-	int x = 0;
+	pid_t pid;
 
 	while (cnt < 5)
 	{
-		if (fork() == 0)
-		{
-			printf("Zombie process created, PID: %d\n", getpid());
-			cnt++;
-			exit(0)
-		}
-		if (x == 20) break;
-		x++;
+		pid = fork();
+		if(pid == 0)
+			break;
+		printf("Zombie process created, PID: %i\n", (int)pid);
+		cnt++;
 	}
+	if (pid)
+		infinite_while();
 	return (0);
 }
