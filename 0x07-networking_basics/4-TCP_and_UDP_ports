@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-
+# Once packets have been sent to the right network device
+#  using IP using either UDP or TCP as a mode 
+# of transportation, it needs to actually enter the network device.
 netstat -l
