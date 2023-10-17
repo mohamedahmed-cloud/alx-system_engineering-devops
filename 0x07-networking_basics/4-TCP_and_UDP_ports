@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Once packets have been sent to the right network device
-#  using IP using either UDP or TCP as a mode 
-# of transportation, it needs to actually enter the network device.
+# Write a Bash script that displays listening ports:
+
+# 	That only shows listening sockets
+# 	That shows the PID and name of the program to which each socket belongs
 netstat -l
